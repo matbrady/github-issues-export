@@ -1,0 +1,77 @@
+# Ignore local dev only files
+
+*.cache
+*.dump
+*.gem
+*.log
+*.pid
+*.rbc
+*.sqlite3
+*.sqlite3-journal
+.bundle
+.config
+.env
+.env.test
+.yardoc
+config/database.yml
+coverage
+export
+InstalledFiles
+lib/bundler/man
+node_modules
+pkg
+public/system/**/*
+/public/packs
+/public/packs-test
+rdoc
+rerun.txt
+spec/reports
+spec/tmp/**/*
+tags
+test/tmp
+test/version_tmp
+vendor/**/*
+vim/.netrwhist
+zeus.json
+_yardoc
+
+# Ignore compilation junk
+
+**.orig
+*.rbc
+*.sassc
+*.sw[nop]
+.rspec
+.sass-cache
+capybara-*.html
+pickle-email-*.html
+rerun.txt
+
+# Ignore filesystem trash
+
+*.DS_Store
+*Thumbs.db
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+
+# Ignore tmp/, but keep it empty in the repo
+# Rails does not always automatically create this folder for you
+
+tmp/**/*
+
+# Ignore log/, but keep it empty in the repo
+# Rails does not always automatically create this folder for you
+
+log/**/*
+
+# Specifically DO NOT ignore these other things
+
+!.gitignore
+!.slugignore
+!.ruby-version
+!*.gitkeep
+!*.keep
+/public/packs
+/node_modules
+*.csv
