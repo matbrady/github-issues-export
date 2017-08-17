@@ -2,7 +2,7 @@ const graphql = require("graphql-request");
 const json2csv = require("json2csv");
 const fs = require("fs");
 const argv = require("minimist")(process.argv.slice(2));
-const fileName = "issues.csv";
+const fileName = argv.filename || "issues.csv";
 
 const fields = [
   "node.title",
@@ -26,8 +26,6 @@ const client = new graphql.GraphQLClient("https://api.github.com/graphql", {
     Authorization: `Bearer ${argv.token}`
   }
 });
-
-// console.log(argv);
 
 const query = `{
   repository(owner: "${argv.owner}", name: "${argv.repo}") {

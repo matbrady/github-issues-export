@@ -15,9 +15,12 @@ Usage: node index.js [options]
 
   Options:
 
-    --token [value]             Github OAuth token
-    --owner [value]             Github repo owner name
-    --repo  [value]             Github repo name
+    --token    [value]      Github OAuth token
+    --owner    [value]      Github repo owner name
+    --repo     [value]      Github repo name
+    --filename [value]      Export file name
 ```
 
 ## Modifying the Query
+
+You can modify the query by adjusting the `query` string contained in the [`index.js`](https://github.com/matbrady/github-issues-export/blob/master/index.js#L32-L73) file. Without any modifications, the script will export the **last 100 open issues with their labels and comments**.
