@@ -1,6 +1,6 @@
 {
   "name": "github-issue-export",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "export github repo issues to csv",
   "main": "index.js",
   "author": "Mat Brady",
